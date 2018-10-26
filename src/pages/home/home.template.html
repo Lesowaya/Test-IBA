@@ -1,0 +1,1 @@
+<mat-tab-group (selectedTabChange)="setTab($event)" [selectedIndex]="getTab()">  <mat-tab [label]="tab.title" *ngFor="let tab of tabs">    <p>{{tab.text}}</p>  </mat-tab></mat-tab-group>

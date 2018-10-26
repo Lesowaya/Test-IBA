@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
-import {MatCardModule} from '@angular/material';
+import {MatTabsModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {HomeComponent} from './home';
-import {AuthService} from '../../services/auth';
+import {HomeComponent} from './home.component';
+import {HomeService} from './home.service';
 
 @NgModule({
   declarations: [
@@ -10,10 +10,10 @@ import {AuthService} from '../../services/auth';
   ],
   imports: [
     BrowserAnimationsModule,
-    MatCardModule
+    MatTabsModule,
   ],
   providers: [
-    AuthService
+    HomeService
   ]
 })
 
